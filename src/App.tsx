@@ -1,9 +1,10 @@
 import React from "react"
+import PageThanks from "./pages/PageThanks"
 
 function App() {
   return (
     <>
-      <div className="text-8xl ">123asdfa</div>
+      <PageThanks></PageThanks>
     </>
   )
 }
