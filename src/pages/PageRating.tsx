@@ -4,7 +4,9 @@ import Rating from "../components/RatingCard/RatingCard"
 function PageRating() {
   return (
     <>
-      <Rating></Rating>
+      <div className="w-full h-screen bg-very-dark-blue">
+        <Rating></Rating>
+      </div>
     </>
   )
 }

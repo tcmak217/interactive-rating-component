@@ -1,10 +1,10 @@
 import React from "react"
-import PageThanks from "./pages/PageThanks"
+import PageRating from "./pages/PageRating"
 
 function App() {
   return (
     <>
-      <PageThanks></PageThanks>
+      <PageRating></PageRating>
     </>
   )
 }
