@@ -1,8 +1,12 @@
 import React from "react"
+import startIcon from "../../images/icon-star.svg"
 
 function RatingCard() {
   return (
     <div className="bg-dark-blue max-w-[320px] w-[90%] h-[400px] rounded-3xl">
+      <div>
+        <img src={startIcon} alt="" />
+      </div>
       <div className="text-white">How did we do?</div>
       <div className="text-light-grey">
         Please let us know how we did with your support request.All feedback is appreciated to help
