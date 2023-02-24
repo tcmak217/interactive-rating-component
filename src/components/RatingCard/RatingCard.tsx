@@ -3,17 +3,21 @@ import startIcon from "../../images/icon-star.svg"
 
 function RatingCard() {
   return (
-    <div className="bg-[hsl(215,20%,15%)] w-[320px] h-[400px] rounded-3xl">
+    <div className="bg-[hsl(215,20%,15%)] w-[320px] h-[360px] rounded-3xl">
       <div className="w-full h-full flex flex-col p-8">
-        <div className="grow">
+        <div className="flex items-center my-4">
           <img src={startIcon} alt="star icon" />
         </div>
-        <div className="text-white grow text-2xl font-bold">How did we do?</div>
-        <div className="text-light-grey grow text-sm">
-          Please let us know how we did with your support request. All feedback is appreciated to
-          help us improve our offering!
+        <div className="flex items-center my-2">
+          <div className="text-white text-2xl font-bold">How did we do?</div>
         </div>
-        <div className="flex flex-row grow justify-between">
+        <div className="flex items-center my-2">
+          <div className="text-light-grey text-sm">
+            Please let us know how we did with your support request. All feedback is appreciated to
+            help us improve our offering!
+          </div>
+        </div>
+        <div className="flex flex-row justify-between items-center my-4">
           <button className="w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full">
             1
           </button>
@@ -30,7 +34,7 @@ function RatingCard() {
             5
           </button>
         </div>
-        <button className="w-full h-10 tracking-widest text-sm text-white bg-orange rounded-full uppercase active:bg-white active:text-orange">
+        <button className="w-full min-h-[2.5rem] tracking-widest text-sm text-white bg-orange rounded-full uppercase active:bg-white active:text-orange">
           Submit
         </button>
       </div>
