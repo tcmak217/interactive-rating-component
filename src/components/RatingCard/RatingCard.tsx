@@ -3,7 +3,7 @@ import startIcon from "../../images/icon-star.svg"
 
 function RatingCard() {
   return (
-    <div className="bg-[hsl(215,20%,15%)] w-[320px] h-[360px] rounded-3xl">
+    <div className="bg-[hsl(215,20%,15%)] w-[320px] rounded-3xl">
       <div className="w-full h-full flex flex-col p-8">
         <div className="flex items-center mb-2">
           <div className="w-9 h-9 rounded-full bg-dark-blue flex justify-center items-center">
