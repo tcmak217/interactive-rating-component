@@ -2,6 +2,8 @@ import React from "react"
 import startIcon from "../../images/icon-star.svg"
 
 function RatingCard() {
+  const [rating, setRating] = React.useState<number | null>(null)
+
   return (
     <div className="bg-[hsl(215,20%,15%)] w-[320px] rounded-3xl">
       <div className="w-full h-full flex flex-col p-8">
@@ -20,19 +22,54 @@ function RatingCard() {
           </div>
         </div>
         <div className="flex flex-row justify-between items-center my-4">
-          <button className="w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full">
+          <button
+            className={`w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full ${
+              rating === 51 ? "bg-light-grey text-white" : ""
+            }`}
+            onClick={() => {
+              setRating(1)
+            }}
+          >
             1
           </button>
-          <button className="w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full">
+          <button
+            className={`w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full ${
+              rating === 2 ? "bg-light-grey text-white" : ""
+            }`}
+            onClick={() => {
+              setRating(2)
+            }}
+          >
             2
           </button>
-          <button className="w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full">
+          <button
+            className={`w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full ${
+              rating === 3 ? "bg-light-grey text-white" : ""
+            }`}
+            onClick={() => {
+              setRating(3)
+            }}
+          >
             3
           </button>
-          <button className="w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full">
+          <button
+            className={`w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full ${
+              rating === 4 ? "bg-light-grey text-white" : ""
+            }`}
+            onClick={() => {
+              setRating(4)
+            }}
+          >
             4
           </button>
-          <button className="w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full">
+          <button
+            className={`w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full ${
+              rating === 5 ? "bg-light-grey text-white" : ""
+            }`}
+            onClick={() => {
+              setRating(5)
+            }}
+          >
             5
           </button>
         </div>
