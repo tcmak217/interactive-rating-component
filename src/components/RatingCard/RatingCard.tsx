@@ -1,9 +1,13 @@
 import React from "react"
 import startIcon from "../../images/icon-star.svg"
 
-function RatingCard() {
-  const [rating, setRating] = React.useState<number | null>(null)
-
+function RatingCard({
+  rating,
+  handleSetRating,
+}: {
+  rating: number | null
+  handleSetRating: (rating: number) => void
+}) {
   return (
     <div className="bg-[hsl(215,20%,15%)] w-[320px] rounded-3xl">
       <div className="w-full h-full flex flex-col p-8">
@@ -27,7 +31,7 @@ function RatingCard() {
               rating === 51 ? "bg-light-grey text-white" : ""
             }`}
             onClick={() => {
-              setRating(1)
+              handleSetRating(1)
             }}
           >
             1
@@ -37,7 +41,7 @@ function RatingCard() {
               rating === 2 ? "bg-light-grey text-white" : ""
             }`}
             onClick={() => {
-              setRating(2)
+              handleSetRating(2)
             }}
           >
             2
@@ -47,7 +51,7 @@ function RatingCard() {
               rating === 3 ? "bg-light-grey text-white" : ""
             }`}
             onClick={() => {
-              setRating(3)
+              handleSetRating(3)
             }}
           >
             3
@@ -57,7 +61,7 @@ function RatingCard() {
               rating === 4 ? "bg-light-grey text-white" : ""
             }`}
             onClick={() => {
-              setRating(4)
+              handleSetRating(4)
             }}
           >
             4
@@ -67,7 +71,7 @@ function RatingCard() {
               rating === 5 ? "bg-light-grey text-white" : ""
             }`}
             onClick={() => {
-              setRating(5)
+              handleSetRating(5)
             }}
           >
             5
