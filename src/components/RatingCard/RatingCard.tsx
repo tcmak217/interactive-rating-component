@@ -30,7 +30,7 @@ function RatingCard() {
             5
           </button>
         </div>
-        <button className="text-white grow bg-orange rounded-full uppercase active:bg-white active:text-orange">
+        <button className="w-full h-10 tracking-widest text-sm text-white bg-orange rounded-full uppercase active:bg-white active:text-orange">
           Submit
         </button>
       </div>
