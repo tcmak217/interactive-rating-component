@@ -3,7 +3,7 @@ import startIcon from "../../images/icon-star.svg"
 
 function RatingCard() {
   return (
-    <div className="bg-dark-blue max-w-[320px] w-[90%] h-[400px] rounded-3xl">
+    <div className="bg-dark-blue w-[320px] h-[400px] rounded-3xl">
       <div className="w-full h-full flex flex-col p-8">
         <div className="grow">
           <img src={startIcon} alt="star icon" />
