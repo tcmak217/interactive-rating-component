@@ -13,7 +13,13 @@ function RatingCard() {
           Please let us know how we did with your support request.All feedback is appreciated to
           help us improve our offering!
         </div>
-        <div className="text-light-grey grow">1 2 3 4 5</div>
+        <div className="flex flex-row justify-between">
+          <button className="text-light-grey grow">1</button>
+          <button className="text-light-grey grow">2</button>
+          <button className="text-light-grey grow">3</button>
+          <button className="text-light-grey grow">4</button>
+          <button className="text-light-grey grow">5</button>
+        </div>
         <div className="text-white grow">Submit</div>
       </div>
     </div>
