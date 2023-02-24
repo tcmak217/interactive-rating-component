@@ -13,12 +13,22 @@ function RatingCard() {
           Please let us know how we did with your support request.All feedback is appreciated to
           help us improve our offering!
         </div>
-        <div className="flex flex-row justify-between">
-          <button className="text-light-grey grow">1</button>
-          <button className="text-light-grey grow">2</button>
-          <button className="text-light-grey grow">3</button>
-          <button className="text-light-grey grow">4</button>
-          <button className="text-light-grey grow">5</button>
+        <div className="flex flex-row grow justify-between">
+          <button className="w-10 h-10 text-light-grey bg-medium-grey active:bg-orange active:text-white rounded-full">
+            1
+          </button>
+          <button className="w-10 h-10 text-light-grey bg-medium-grey active:bg-orange active:text-white rounded-full">
+            2
+          </button>
+          <button className="w-10 h-10 text-light-grey bg-medium-grey active:bg-orange active:text-white rounded-full">
+            3
+          </button>
+          <button className="w-10 h-10 text-light-grey bg-medium-grey active:bg-orange active:text-white rounded-full">
+            4
+          </button>
+          <button className="w-10 h-10 text-light-grey bg-medium-grey active:bg-orange active:text-white rounded-full">
+            5
+          </button>
         </div>
         <button className="text-white grow bg-orange rounded-full uppercase active:bg-white active:text-orange">
           Submit
