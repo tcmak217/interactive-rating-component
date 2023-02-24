@@ -5,8 +5,10 @@ function RatingCard() {
   return (
     <div className="bg-[hsl(215,20%,15%)] w-[320px] h-[360px] rounded-3xl">
       <div className="w-full h-full flex flex-col p-8">
-        <div className="flex items-center my-4">
-          <img src={startIcon} alt="star icon" />
+        <div className="flex items-center mb-2">
+          <div className="w-9 h-9 rounded-full bg-dark-blue flex justify-center items-center">
+            <img className="w-3 h-3" src={startIcon} alt="star icon" />
+          </div>
         </div>
         <div className="flex items-center my-2">
           <div className="text-white text-2xl font-bold">How did we do?</div>
