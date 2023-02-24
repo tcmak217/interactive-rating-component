@@ -8,9 +8,9 @@ function RatingCard() {
         <div className="grow">
           <img src={startIcon} alt="star icon" />
         </div>
-        <div className="text-white grow">How did we do?</div>
-        <div className="text-light-grey grow">
-          Please let us know how we did with your support request.All feedback is appreciated to
+        <div className="text-white grow text-2xl font-bold">How did we do?</div>
+        <div className="text-light-grey grow text-sm">
+          Please let us know how we did with your support request. All feedback is appreciated to
           help us improve our offering!
         </div>
         <div className="flex flex-row grow justify-between">
