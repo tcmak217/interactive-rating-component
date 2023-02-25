@@ -8,7 +8,7 @@ function ThanksCard({ rating }: { rating: number | null }) {
         <div className="w-[150px]">
           <img src={thanksImage} alt="thank you image" />
         </div>
-        <div>
+        <div className="p-2 bg-dark-blue rounded-full">
           <div className="text-orange text-sm">You selected {rating} out of 5</div>
         </div>
         <div className="text-white text-2xl font-bold">Thank you!</div>
