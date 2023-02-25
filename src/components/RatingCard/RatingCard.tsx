@@ -29,7 +29,7 @@ function RatingCard({
         </div>
         <div className="flex flex-row justify-between items-center">
           <button
-            className={`w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full ${
+            className={`w-10 h-10 text-light-grey bg-dark-blue hover:bg-orange hover:text-white rounded-full ${
               rating === 1 ? "bg-light-grey text-white" : ""
             }`}
             onClick={() => {
@@ -39,7 +39,7 @@ function RatingCard({
             1
           </button>
           <button
-            className={`w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full ${
+            className={`w-10 h-10 text-light-grey bg-dark-blue hover:bg-orange hover:text-white rounded-full ${
               rating === 2 ? "bg-light-grey text-white" : ""
             }`}
             onClick={() => {
@@ -49,7 +49,7 @@ function RatingCard({
             2
           </button>
           <button
-            className={`w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full ${
+            className={`w-10 h-10 text-light-grey bg-dark-blue hover:bg-orange hover:text-white rounded-full ${
               rating === 3 ? "bg-light-grey text-white" : ""
             }`}
             onClick={() => {
@@ -59,7 +59,7 @@ function RatingCard({
             3
           </button>
           <button
-            className={`w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full ${
+            className={`w-10 h-10 text-light-grey bg-dark-blue hover:bg-orange hover:text-white rounded-full ${
               rating === 4 ? "bg-light-grey text-white" : ""
             }`}
             onClick={() => {
@@ -69,7 +69,7 @@ function RatingCard({
             4
           </button>
           <button
-            className={`w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full ${
+            className={`w-10 h-10 text-light-grey bg-dark-blue hover:bg-orange hover:text-white rounded-full ${
               rating === 5 ? "bg-light-grey text-white" : ""
             }`}
             onClick={() => {
@@ -80,7 +80,7 @@ function RatingCard({
           </button>
         </div>
         <button
-          className="w-full min-h-[2.5rem] tracking-widest text-sm text-white bg-orange rounded-full uppercase active:bg-white active:text-orange"
+          className="w-full min-h-[2.5rem] tracking-widest text-sm text-white bg-orange rounded-full uppercase hover:bg-white hover:text-orange"
           onClick={() => {
             handleSetIsSubmitted(true)
           }}
