@@ -28,7 +28,7 @@ function RatingCard({
         <div className="flex flex-row justify-between items-center">
           <button
             className={`w-10 h-10 text-light-grey bg-dark-blue active:bg-orange active:text-white rounded-full ${
-              rating === 51 ? "bg-light-grey text-white" : ""
+              rating === 1 ? "bg-light-grey text-white" : ""
             }`}
             onClick={() => {
               handleSetRating(1)
