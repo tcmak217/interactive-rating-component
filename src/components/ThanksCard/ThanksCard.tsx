@@ -1,6 +1,6 @@
 import React from "react"
 
-function ThanksCard() {
+function ThanksCard({ rating }: { rating: number | null }) {
   return (
     <div>
       You selected out of 5 Thank you! We appreciate you taking the time to give a rating. If you
